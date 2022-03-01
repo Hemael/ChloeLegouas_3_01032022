@@ -1,0 +1,79 @@
+
+.haut{
+    position: relative;
+    
+    .banniere img{
+        width: 100%;
+        object-fit:contain; 
+        z-index: 8;
+    }
+}
+
+.restaurant-nom{
+    margin-top: -70px;
+    font-family: 'Shrikhand'; 
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $background;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    z-index: 1;
+    position: relative;
+
+    h1{
+        font-size: 30px;
+    }
+
+    .far{
+        font-size: 25px;
+    }
+}
+
+.menu{
+    background-color:$background ;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    h2{
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .boite__menu{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 15px;
+        padding: 15px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow: $boite-ombre;
+
+        h3{
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .boite__prix{
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 15px;
+        }
+    }
+
+    .reservation__bouton--botton{
+        padding-left:50px;
+        padding-right: 50px;
+        font-weight: normal;
+    }
+    
+}
+
+
+ 

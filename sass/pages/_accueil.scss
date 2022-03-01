@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'roboto', Arial;
+    
+    box-sizing: border-box;
+}
+
+.reservation{
+    padding:20px;
+    text-align: center;
+    background-color:$background;
+
+    p{
+        color:$gris-n;
+    }
+}
+
+.fonctionnement h2, .restaurant h2{
+    padding-bottom: 30px; 
+    padding-top: 20px; 
+}
+
+.fonctionnement{
+    padding: 20px;
+    padding-bottom: 30px;  
+
+    &__boite{
+        background-color: $background;
+        padding:20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        box-shadow: $boite-ombre;
+
+        .fonctionnement__texte{
+            display: flex;
+
+            .chiffre{
+                display: flex;
+                flex: 0 0 23px;
+                border-radius: 20px;
+                height: 23px;
+                margin-left: -28px;
+                background-color: $violet;
+                color:white;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                
+            }
+        }
+        .fas{
+            color: rgb(136, 136, 136);
+        }  
+    }
+}
+
+
+.fonctionnement__boite:hover, .fas:hover{
+    background-color: #f2ecfa;
+}
+
+.fonctionnement__boite:hover .fas{
+        color: #9356DC;
+}
+
+.fonctionnement__texte, .chiffre, .texte, .fas{
+    font-size: 20px;
+   margin-right: 15px;
+}
+
+/* Restaurants */
+.restaurant {
+    display: flex;
+    background-color: $background;
+    flex-direction: column;
+    padding:20px;
+    padding-bottom: 40px;
+
+    &__card {
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: $boite-ombre;
+        background-color: white;
+        margin-bottom: 20px;
+        padding-bottom: 4px;
+        padding-left: 4px;  
+        justify-content: flex-end;   
+    }
+
+    .restaurant__image{
+
+        display: flex;
+        justify-content: flex-end;
+        
+        .restaurant__nouv{
+            display: flex;
+            color: green;
+            background-color: greenyellow;
+            height: 35px;
+            width: 100px;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            margin: 20px ;
+            font-weight: bold;
+            border-radius: 3px;
+            
+        }
+    }
+    
+    
+
+    &__card img {
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        height: 200px;
+    }
+
+    &__groupe{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+        padding: 10px;
+        padding-right: 20px;
+
+    }
+
+    h3{
+        padding-bottom: 4px;
+    }
+}
+.restaurant .far{
+    font-size: 25px;
+    color: black;
+     
+
+   
+
+    &:hover{
+    font-family: "Font Awesome 5 pro";
+    font-weight: 900;
+    content: "\f004";
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+    }
+}
+
+
+
+
+
+
