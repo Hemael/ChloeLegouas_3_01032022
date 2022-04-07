@@ -6,25 +6,29 @@ footer{
 
     a{
         color:$white;
-        
     }
 
     li{
         padding-bottom: 8px;
     }
 
-
-    .fas{
-        font-size: 15px;
-        
-    }
-
-     p{
+    p{
         font-family: shrikhand;
         font-size: 20px;
         color: $white;
-        padding-bottom: 10px;
+        padding-bottom: 10px; 
     }
+
+    .fa-hands-helping{
+        font-size: 14px;
+    }
+
+    .fa-utensils{
+        font-size: 16px;
+        padding-right: 6px;
+           
+    }
+
     
    
     
