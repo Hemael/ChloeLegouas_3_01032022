@@ -262,6 +262,12 @@ body {
   font-size: 20px;
   font-weight: normal;
 }
+.menu em {
+  text-decoration: underline #a7e7cc;
+  text-decoration-thickness: 3px;
+  font-style: normal;
+  text-underline-position: under;
+}
 .menu .boite__menu {
   display: flex;
   align-items: flex-end;
