@@ -216,16 +216,24 @@ body {
 
 .restaurant .far {
   font-size: 25px;
-  color: black;
+  background: white;
 }
 .restaurant .far:hover {
   font-family: "Font Awesome 5 pro";
   font-weight: 900;
   content: "\f004";
   background: linear-gradient(#FF79DA, #9356DC);
+  color: #9356DC;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.trans:hover {
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  color: white;
 }
 
 .haut {

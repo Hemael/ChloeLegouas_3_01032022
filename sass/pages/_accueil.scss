@@ -138,25 +138,31 @@ body {
 }
 .restaurant .far{
     font-size: 25px;
-    color: black;
+    background:white ;
      
 
    
 
     &:hover{
+
     font-family: "Font Awesome 5 pro";
     font-weight: 900;
     content: "\f004";
     background: $gradient;
+    color:$violet;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    
     }
 }
 
-
+.trans:hover{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    color:white;
+}
 
 
 
