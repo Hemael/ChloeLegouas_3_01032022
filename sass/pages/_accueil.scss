@@ -138,66 +138,14 @@ body {
 }
 
 .restaurants__underblock--hearts {
-    position: relative;
-    margin-right: 22px;
-    margin-top: 4px;
-    cursor: pointer;
+    position: relative; 
     @include heart-anime
+    
   }
 
-//.restaurant .far{
-    
-     
-     //font-size: 25px;
-     //background-repeat: repeat-x;
-     //background-position: 0 -100%;
-     //outline: 0;
-     //background: $gradient;
-     //overflow: hidden;
-     //background-clip: text;
-
-    //  position: relative;
-     
-    //  box-sizing: border-box;
-    //  outline: 0;
-    //  overflow: hidden;
-
-
-
-    //&:hover{
-    //font-family: "Font Awesome 5 pro";
-    //font-weight: 900;
-    //background: $gradient;
-    //color:green;
-    //background-color:#9356DC ;
-    //color: blue;
-    //border-color: rgb(206, 20, 20);
-    
-    //border:20 rem solid chartreuse;
-    //-webkit-background-clip: text;
-    //-webkit-text-fill-color:transparent;
-    //transform: scale(2);
-    //transition-property: transform;
-    //transition-duration: 1s;
-    //overflow: hidden;
-    //background-clip: border-box;
-
-    
-    //animation: spin 6s linear infinite;
-    //   position: absolute;
-    //   left: 0;
-    //   top: 0;
-    //   bottom: -50%;
-    //   left: -50%;
-    //   height: 200%;
-    //   width: 200%;
-    //   box-sizing: border-box;
-    //   background-color: yellow;
-
-    //   border-radius: 40%;
-
-    //}
-//}
+.restaurant .fa-lg{
+    line-height: 18px;
+}
 
 
 @keyframes spin {

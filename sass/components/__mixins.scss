@@ -1,8 +1,4 @@
 @mixin heart-anime {
-    //i {
-      font-size: 24px;
-    //}
-  
     .icon--full {
       left: 0;
       opacity: 0;
@@ -12,13 +8,12 @@
     }
   
     &:hover .icon--full {
-      cursor: pointer;
       overflow: hidden;
       background: $gradient;
-      -webkit-text-fill-color: transparent;
       background-clip: text;
+      -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
-      opacity: 5;
+      opacity: 1;
       transform: scale(0.85);
     }
   }

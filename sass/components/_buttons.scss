@@ -2,6 +2,7 @@
 .reservation__bouton{
     
     &--botton{
+        cursor:pointer;
         font-weight: bold;
         background:$gradient;
         border-radius: 40px;
