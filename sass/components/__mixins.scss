@@ -1,0 +1,24 @@
+@mixin heart-anime {
+    //i {
+      font-size: 24px;
+    //}
+  
+    .icon--full {
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      transform: scale(0);
+      transition: opacity 400ms ease, transform 400ms ease;
+    }
+  
+    &:hover .icon--full {
+      cursor: pointer;
+      overflow: hidden;
+      background: $gradient;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      opacity: 5;
+      transform: scale(0.85);
+    }
+  }
