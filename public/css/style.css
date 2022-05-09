@@ -119,6 +119,7 @@ footer .fa-utensils {
   right: 0;
   bottom: 0;
   visibility: hidden;
+  z-index: 10;
 }
 .chargement .rotate {
   margin: 7px;
@@ -371,6 +372,15 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 5px 2px 5px #dad8d8;
+}
+.menu .boite__menu .validation {
+  background-color: green;
+}
+.menu .boite__menu i {
+  font-size: 20px;
+  color: blue;
+  transform: rotate(180deg);
+  animation: rotate 0.8s both;
 }
 .menu .boite__menu h3 {
   padding-bottom: 5px;

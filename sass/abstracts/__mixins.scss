@@ -17,3 +17,25 @@
       transform: scale(0.85);
     }
   }
+
+
+  @mixin validation-animation{
+
+
+
+
+
+    .validation{
+
+    
+    background-color:green;
+    
+
+    }
+    i {
+      font-size: 20px;
+      color: blue;
+      transform: rotate(180deg);
+      animation: rotate 0.8s both;
+    } 
+  }
