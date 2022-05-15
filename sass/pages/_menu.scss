@@ -1,4 +1,8 @@
 
+
+
+
+
 .haut{
     position: relative;
     
@@ -66,7 +70,7 @@
         margin-bottom: 20px;
         box-shadow: $boite-ombre;
         
-        border: 1px solid black;
+        
         @include validation-animation;
 
         .boite__item{
@@ -74,7 +78,7 @@
             white-space: nowrap;
             //overflow: hidden;
             text-overflow: ellipsis;
-            border: 1px solid black;
+            
         }
          
         
@@ -92,7 +96,7 @@
         .boite__prix{
             font-weight: bold;
             //flex: 10%;
-            border: 1px solid black;
+            
             
         }
 

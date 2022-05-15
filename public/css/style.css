@@ -109,6 +109,22 @@ footer .fa-utensils {
     opacity: 1;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glisse-gauche {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .chargement {
   display: flex;
   position: relative;
@@ -396,22 +412,38 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 5px 2px 5px #dad8d8;
-  border: 1px solid black;
 }
-.menu .boite__menu .validation {
-  background-color: green;
+.menu .boite__menu:hover .boite__validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: glisse-gauche 0.6s ease;
+  transform-origin: right;
 }
-.menu .boite__menu i {
-  font-size: 20px;
-  color: blue;
+.menu .boite__menu:hover .boite__prix {
+  padding-right: 70px;
+  transition: 0.7s ease;
+}
+.menu .boite__menu .boite__validation {
+  display: none;
+  position: absolute;
+  background-color: rgb(196, 230, 196);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: -15px;
+  right: 0px;
+  padding: 0 20px;
+  height: 100%;
+}
+.menu .boite__menu .boite__validation i {
+  font-size: 25px;
+  color: white;
   transform: rotate(180deg);
   animation: rotate 0.8s both;
-  width: 20px;
 }
 .menu .boite__menu .boite__item {
   white-space: nowrap;
   text-overflow: ellipsis;
-  border: 1px solid black;
 }
 .menu .boite__menu h3 {
   padding-bottom: 5px;
@@ -422,7 +454,6 @@ body {
 }
 .menu .boite__menu .boite__prix {
   font-weight: bold;
-  border: 1px solid black;
 }
 .menu .boite__menu p {
   font-size: 15px;
