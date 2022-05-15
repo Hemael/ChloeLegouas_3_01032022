@@ -13,7 +13,12 @@ a,  ul{
         padding: 10px;
         font-family: shrikhand;
         font-size: 30px;
+        
 
+        .fas{
+            padding-right: 80px;
+            margin-left: -80px;
+        }
     }
 
     &__localisation{
@@ -35,5 +40,6 @@ a,  ul{
         }
 
     }
+
 
 }

@@ -21,6 +21,7 @@
     border-top-left-radius: 40px;
     z-index: 1;
     position: relative;
+    @include heart-anime;
 
     h1{
         font-size: 30px;
@@ -28,6 +29,10 @@
 
     .far{
         font-size: 25px;
+    }
+    .fa-lg{
+        font-size: 1.55em;
+        line-height: 1em;
     }
 }
 
@@ -61,21 +66,41 @@
         margin-bottom: 20px;
         box-shadow: $boite-ombre;
         
+        border: 1px solid black;
         @include validation-animation;
 
+        .boite__item{
+            //flex: 90%;
+            white-space: nowrap;
+            //overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid black;
+        }
+         
         
 
         h3{
             padding-bottom: 5px;
             font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+            
         }
 
         .boite__prix{
             font-weight: bold;
+            //flex: 10%;
+            border: 1px solid black;
+            
         }
 
         p{
             font-size: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 

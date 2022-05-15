@@ -14,6 +14,10 @@ a, ul {
   font-family: shrikhand;
   font-size: 30px;
 }
+.header__logo .fas {
+  padding-right: 80px;
+  margin-left: -80px;
+}
 .header__localisation {
   display: flex;
   flex-direction: row;
@@ -249,11 +253,11 @@ body {
   padding-left: 4px;
   justify-content: flex-end;
 }
-.restaurant .restaurant__image {
+.restaurant__image {
   display: flex;
   justify-content: flex-end;
 }
-.restaurant .restaurant__image .restaurant__nouv {
+.restaurant__image .restaurant__nouv {
   display: flex;
   color: rgb(39, 145, 96);
   background-color: rgb(155, 212, 195);
@@ -302,7 +306,7 @@ body {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   opacity: 1;
-  transform: scale(0.85);
+  transform: scale(1);
 }
 
 .restaurant .fa-lg {
@@ -339,11 +343,31 @@ body {
   z-index: 1;
   position: relative;
 }
+.restaurant-nom .icon--full {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transform: scale(0);
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+.restaurant-nom:hover .icon--full {
+  overflow: hidden;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  opacity: 1;
+  transform: scale(1);
+}
 .restaurant-nom h1 {
   font-size: 30px;
 }
 .restaurant-nom .far {
   font-size: 25px;
+}
+.restaurant-nom .fa-lg {
+  font-size: 1.55em;
+  line-height: 1em;
 }
 
 .menu {
@@ -372,6 +396,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 5px 2px 5px #dad8d8;
+  border: 1px solid black;
 }
 .menu .boite__menu .validation {
   background-color: green;
@@ -381,16 +406,29 @@ body {
   color: blue;
   transform: rotate(180deg);
   animation: rotate 0.8s both;
+  width: 20px;
+}
+.menu .boite__menu .boite__item {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border: 1px solid black;
 }
 .menu .boite__menu h3 {
   padding-bottom: 5px;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .boite__menu .boite__prix {
   font-weight: bold;
+  border: 1px solid black;
 }
 .menu .boite__menu p {
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .reservation__bouton--botton {
   padding-left: 50px;
