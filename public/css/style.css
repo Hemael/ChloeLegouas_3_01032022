@@ -13,10 +13,12 @@ a, ul {
   padding: 10px;
   font-family: shrikhand;
   font-size: 30px;
+  flex-direction: row;
 }
-.header__logo .fas {
-  padding-right: 80px;
-  margin-left: -80px;
+.header__logo i.fas.fa-arrow-left {
+  position: absolute;
+  top: 0.75em;
+  left: 0.2em;
 }
 .header__localisation {
   display: flex;
@@ -111,10 +113,10 @@ footer .fa-utensils {
 }
 @keyframes rotate {
   0% {
-    transform: rotate(0);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0);
   }
 }
 @keyframes glisse-gauche {
@@ -238,7 +240,7 @@ body {
   color: rgb(136, 136, 136);
 }
 
-.fonctionnement__boite:hover, .fas:hover {
+.fonctionnement__boite:hover {
   background-color: #f2ecfa;
 }
 
@@ -438,11 +440,11 @@ body {
 .menu .boite__menu .boite__validation i {
   font-size: 25px;
   color: white;
-  transform: rotate(180deg);
-  animation: rotate 0.8s both;
+  animation: rotate 0.8s linear;
 }
 .menu .boite__menu .boite__item {
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu .boite__menu h3 {

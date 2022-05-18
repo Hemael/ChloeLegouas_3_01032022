@@ -74,9 +74,9 @@
         @include validation-animation;
 
         .boite__item{
-            //flex: 90%;
+            
             white-space: nowrap;
-            //overflow: hidden;
+            overflow: hidden;
             text-overflow: ellipsis;
             
         }
@@ -95,7 +95,7 @@
 
         .boite__prix{
             font-weight: bold;
-            //flex: 10%;
+            
             
             
         }

@@ -7,17 +7,30 @@ a,  ul{
 .header{
 
     &__logo{
-        display: flex;
+        display:flex;
         justify-content: center;
         background-color: white;
         padding: 10px;
         font-family: shrikhand;
         font-size: 30px;
+        flex-direction: row;
+        
+        
         
 
-        .fas{
-            padding-right: 80px;
-            margin-left: -80px;
+        i.fas.fa-arrow-left{
+            position: absolute;
+            top: 0.75em;
+            left: 0.2em;
+            //display:flex;
+            //text-align: center;
+            //justify-content: center;
+            //align-items: center;
+            //flex-grow: 0.2;
+             //padding-right: 80px;
+             //margin-left:0%;
+            //align-items: flex-start;
+            
         }
     }
 
