@@ -101,6 +101,11 @@ footer .fa-utensils {
   animation-delay: 600ms;
 }
 
+.fade-in-bottom-4 {
+  animation: fade-in-bottom 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 800ms;
+}
+
 @keyframes fade-in-bottom {
   0% {
     transform: translateY(50px);
@@ -429,7 +434,7 @@ body {
 .menu .boite__menu .boite__validation {
   display: none;
   position: absolute;
-  background-color: rgb(196, 230, 196);
+  background-color: #9FD2C7;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-bottom: -15px;
