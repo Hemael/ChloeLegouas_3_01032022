@@ -1,25 +1,23 @@
-
-
-
-#corps{
+#corps {
     margin: 0 auto;
 }
 
-.haut{
+.haut {
     position: relative;
-    .banniere img{
+
+    .banniere img {
         width: 100%;
         height: 500px;
-        object-fit:cover; 
+        object-fit: cover;
         z-index: 8;
     }
 }
 
-.restaurant-nom{
+.restaurant-nom {
     margin-top: -70px;
-    font-family: 'Shrikhand'; 
+    font-family: 'Shrikhand';
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     padding: 20px;
     background-color: $background;
@@ -29,38 +27,40 @@
     position: relative;
     @include heart-anime;
 
-    h1{
+    h1 {
         font-size: 30px;
     }
 
-    .far{
+    .far {
         font-size: 25px;
     }
-    .fa-lg{
+
+    .fa-lg {
         font-size: 1.55em;
         line-height: 1em;
     }
 }
 
-.menu{
-    background-color:$background ;
+.menu {
+    background-color: $background;
     padding-left: 20px;
     padding-bottom: 20px;
 
-    h2{
+    h2 {
         font-size: 20px;
         font-weight: normal;
-        
+
     }
-    em{
-        text-decoration: underline rgb(167, 231, 204)  ;
+
+    em {
+        text-decoration: underline rgb(167, 231, 204);
         text-decoration-thickness: 3px;
-        font-style:normal;
+        font-style: normal;
         text-underline-position: under;
 
     }
 
-    .boite__menu{
+    .boite__menu {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
@@ -71,38 +71,38 @@
         margin-top: 20px;
         margin-bottom: 20px;
         box-shadow: $boite-ombre;
-        
-        
+
+
         @include validation-animation;
 
-        .boite__item{
-            
+        .boite__item {
+
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            
-        }
-         
-        
 
-        h3{
+        }
+
+
+
+        h3 {
             padding-bottom: 5px;
             font-size: 18px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            
-            
+
+
         }
 
-        .boite__prix{
+        .boite__prix {
             font-weight: bold;
-            
-            
-            
+
+
+
         }
 
-        p{
+        p {
             font-size: 15px;
             white-space: nowrap;
             overflow: hidden;
@@ -110,13 +110,10 @@
         }
     }
 
-    .reservation__bouton--botton{
-        padding-left:50px;
+    .reservation__bouton--botton {
+        padding-left: 50px;
         padding-right: 50px;
         font-weight: normal;
     }
-    
+
 }
-
-
- 

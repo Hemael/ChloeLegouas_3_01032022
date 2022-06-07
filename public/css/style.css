@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-a, ul {
+a,
+ul {
   list-style-type: none;
   text-decoration: none;
   color: black;
@@ -223,7 +224,8 @@ h4 {
   color: rgb(46, 46, 46);
 }
 
-.fonctionnement h2, .restaurant h2 {
+.fonctionnement h2,
+.restaurant h2 {
   padding-bottom: 30px;
   padding-top: 20px;
 }
@@ -263,10 +265,13 @@ h4 {
 }
 
 .fonctionnement__boite:hover .fas {
-  color: #9356DC;
+  color: #9356dc;
 }
 
-.fonctionnement__texte, .chiffre, .texte, .fas {
+.fonctionnement__texte,
+.chiffre,
+.texte,
+.fas {
   font-size: 20px;
   margin-right: 15px;
 }

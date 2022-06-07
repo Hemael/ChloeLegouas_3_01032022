@@ -1,31 +1,27 @@
+.reservation__bouton {
 
-.reservation__bouton{
-    
-    &--botton{
-        cursor:pointer;
+    &--botton {
+        cursor: pointer;
         font-weight: bold;
-        background:$gradient;
+        background: $gradient;
         border-radius: 40px;
         color: white;
         padding-top: 15px;
         padding-bottom: 15px;
         padding-right: 20px;
-        padding-left:20px;
+        padding-left: 20px;
         border: none;
         margin-top: 30px;
         margin-bottom: 30px;
         box-shadow: $boite-ombre-bouton;
-        
 
-        &:hover{
-            background:$gradient-hover;
+
+        &:hover {
+            background: $gradient-hover;
         }
 
     }
-    
+
     text-align: center;
-    
+
 }
-
-
-

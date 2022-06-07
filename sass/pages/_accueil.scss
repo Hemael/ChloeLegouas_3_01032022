@@ -1,87 +1,90 @@
 * {
     margin: 0;
     padding: 0;
-    
 }
-html{
-    //height:100%;
-    
-}
+
 body {
     max-width: 1920px;
-    font-family: 'roboto', Arial;
-    box-sizing: border-box; 
+    font-family: "roboto", Arial;
+    box-sizing: border-box;
 }
-#corps{
+
+#corps {
     margin: 0 auto;
 }
-h3{
+
+h3 {
     font-size: 17px;
 }
-h4{
+
+h4 {
     font-size: 12px;
 }
-.reservation{
-    padding:20px;
-    text-align: center;
-    background-color:$background;
 
-    p{
-        color:$gris-n;
+.reservation {
+    padding: 20px;
+    text-align: center;
+    background-color: $background;
+
+    p {
+        color: $gris-n;
     }
 }
 
-.fonctionnement h2, .restaurant h2{
-    padding-bottom: 30px; 
-    padding-top: 20px; 
+.fonctionnement h2,
+.restaurant h2 {
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 
-.fonctionnement{
+.fonctionnement {
     padding: 20px;
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
 
-    &__boite{
+    &__boite {
         background-color: $background;
-        padding:20px;
+        padding: 20px;
         margin-bottom: 20px;
         border-radius: 20px;
         box-shadow: $boite-ombre;
 
-        .fonctionnement__texte{
+        .fonctionnement__texte {
             display: flex;
 
-            .chiffre{
+            .chiffre {
                 display: flex;
                 flex: 0 0 23px;
                 border-radius: 20px;
                 height: 23px;
                 margin-left: -28px;
                 background-color: $violet;
-                color:white;
+                color: white;
                 justify-content: center;
                 align-items: center;
                 font-size: 16px;
-                
             }
         }
-        .fas{
+
+        .fas {
             color: rgb(136, 136, 136);
-        }  
+        }
     }
 }
 
-
-.fonctionnement__boite:hover{
+.fonctionnement__boite:hover {
     background-color: #f2ecfa;
 }
 
-.fonctionnement__boite:hover .fas{
-        color: #9356DC;
+.fonctionnement__boite:hover .fas {
+    color: #9356dc;
 }
 
-.fonctionnement__texte, .chiffre, .texte, .fas{
+.fonctionnement__texte,
+.chiffre,
+.texte,
+.fas {
     font-size: 20px;
-   margin-right: 15px;
+    margin-right: 15px;
 }
 
 /* Restaurants */
@@ -89,7 +92,7 @@ h4{
     display: flex;
     background-color: $background;
     flex-direction: column;
-    padding:20px;
+    padding: 20px;
     padding-bottom: 40px;
 
     &__card {
@@ -99,16 +102,15 @@ h4{
         background-color: white;
         margin-bottom: 20px;
         padding-bottom: 4px;
-        padding-left: 4px;  
-        justify-content: flex-end;   
+        padding-left: 4px;
+        justify-content: flex-end;
     }
 
-    &__image{
-
+    &__image {
         display: flex;
         justify-content: flex-end;
-        
-        .restaurant__nouv{
+
+        .restaurant__nouv {
             display: flex;
             color: $vert-text;
             background-color: $vert-fond;
@@ -117,14 +119,11 @@ h4{
             align-items: center;
             justify-content: center;
             position: absolute;
-            margin: 20px ;
+            margin: 20px;
             font-weight: bold;
             border-radius: 3px;
-            
         }
     }
-    
-    
 
     &__card img {
         width: 100%;
@@ -134,40 +133,35 @@ h4{
         height: 200px;
     }
 
-    &__groupe{
-        display:flex;
+    &__groupe {
+        display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         padding: 10px;
         padding-right: 20px;
-
     }
 
-    h3{
+    h3 {
         padding-bottom: 4px;
     }
 }
 
 .restaurants__underblock--hearts {
-    position: relative; 
-    @include heart-anime
-    
-  }
+    position: relative;
+    @include heart-anime;
+}
 
-.restaurant .fa-lg{
+.restaurant .fa-lg {
     line-height: 18px;
 }
 
-
 @keyframes spin {
     0% {
-      transform: scale(0) ;
+        transform: scale(0);
     }
+
     100% {
-      transform: scale(1) ;
+        transform: scale(1);
     }
-  
 }
-
-

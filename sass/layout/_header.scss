@@ -1,60 +1,44 @@
-a,  ul{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
+a,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
 }
 
-.header{
+.header {
+  &__logo {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    font-family: shrikhand;
+    font-size: 30px;
+    flex-direction: row;
 
-    &__logo{
-        display:flex;
-        justify-content: center;
-        background-color: white;
-        padding: 10px;
-        font-family: shrikhand;
-        font-size: 30px;
-        flex-direction: row;
-        
-        
-        
-        
-
-        i.fas.fa-arrow-left{
-            position: absolute;
-            
-            top: 0.75em;
-            left: 0.2em;
-            //display:flex;
-            //text-align: center;
-            //justify-content: center;
-            //align-items: center;
-            //flex-grow: 0.2;
-             //padding-right: 80px;
-             //margin-left:0%;
-            //align-items: flex-start;
-            
-        }
+    i.fas.fa-arrow-left {
+      position: absolute;
+      top: 0.75em;
+      left: 0.2em;
+      
     }
+  }
 
-    &__localisation{
-        display: flex;
-        flex-direction:row;
-        justify-content: center;
-        background-color:rgb(231, 231, 231);
-        padding-top: 18px;
-        padding-bottom: 18px;
-        color:$gris-n;
-        box-shadow: inset  0px 4px 3px rgba(0, 0, 0, 0.123);
-        font-weight: bold;
+  &__localisation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: $gris-n;
+    box-shadow: inset 0px 4px 3px rgba(0, 0, 0, 0.123);
+    font-weight: bold;
 
-        .fas{
-            margin-right: 10px;
-            color:$gris-n;
-            font-weight: bold;
-            font-size: 15px;
-        }
-
+    .fas {
+      margin-right: 10px;
+      color: $gris-n;
+      font-weight: bold;
+      font-size: 15px;
     }
-
-
+  }
 }
