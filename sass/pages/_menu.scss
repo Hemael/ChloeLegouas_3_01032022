@@ -1,14 +1,16 @@
 
 
 
-
+#corps{
+    margin: 0 auto;
+}
 
 .haut{
     position: relative;
-    
     .banniere img{
         width: 100%;
-        object-fit:contain; 
+        height: 500px;
+        object-fit:cover; 
         z-index: 8;
     }
 }

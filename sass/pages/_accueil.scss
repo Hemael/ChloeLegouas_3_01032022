@@ -1,14 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'roboto', Arial;
     
-    box-sizing: border-box;
 }
-
+html{
+    //height:100%;
+    
+}
+body {
+    max-width: 1920px;
+    font-family: 'roboto', Arial;
+    box-sizing: border-box; 
+}
+#corps{
+    margin: 0 auto;
+}
+h3{
+    font-size: 17px;
+}
+h4{
+    font-size: 12px;
+}
 .reservation{
     padding:20px;
     text-align: center;

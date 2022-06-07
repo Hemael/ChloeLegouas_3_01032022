@@ -197,8 +197,21 @@ footer .fa-utensils {
 }
 
 body {
+  max-width: 1920px;
   font-family: "roboto", Arial;
   box-sizing: border-box;
+}
+
+#corps {
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+h4 {
+  font-size: 12px;
 }
 
 .reservation {
@@ -344,12 +357,17 @@ body {
     transform: scale(1);
   }
 }
+#corps {
+  margin: 0 auto;
+}
+
 .haut {
   position: relative;
 }
 .haut .banniere img {
   width: 100%;
-  object-fit: contain;
+  height: 500px;
+  object-fit: cover;
   z-index: 8;
 }
 
@@ -434,7 +452,7 @@ body {
 .menu .boite__menu .boite__validation {
   display: none;
   position: absolute;
-  background-color: #9FD2C7;
+  background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-bottom: -15px;
